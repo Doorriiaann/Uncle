@@ -1,161 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uncle Würstchen</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Borscht</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Fredoka One', sans-serif;
-            background-color: #fff;
-            color: #b80000;
-        }
-        header {
-            background-color: #d32f2f;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
-        nav a {
-            color: white;
-            margin: 0 1.5rem;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: opacity 0.3s;
-        }
-        nav a:hover {
-            opacity: 0.8;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 1rem;
-        }
-        .hero img, .location {
-            margin: 0 1rem;
-            max-width: 100%;
-            height: auto;
-            width: auto;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero button {
-            background-color: #d32f2f;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .hero button:hover {
-            background-color: #b71c1c;
-        }
-        section {
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        .about, .contact {
-            background-color: #d32f2f;
-            color: white;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #b71c1c;
-            color: white;
-            font-size: 0.9rem;
-        }
-        .menu-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-        .menu-item {
-            background: #fff0f0;
-            border-radius: 12px;
-            padding: 1rem;
-            width: 200px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        .wurst { display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
         }
     </style>
 </head>
-<body>
-<header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#location">Location</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero" id="home">
-    <div>
-        <img src="/images/logo.png" alt="Hotdog" width="1092" height="670">
-    </div>
-    <button onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'});">Check the Menu</button>
-</section>
-
-<section id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-items">
-        <div class="menu-item">
-            <h3>Classic Hotdog</h3>
-            <p>Perfectly grilled sausage with mustard and ketchup.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Cheesy Würst</h3>
-            <p>Loaded with cheese and crispy onions.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Spicy Delight</h3>
-            <p>For those who like it hot and bold!</p>
-        </div>
-    </div>
-</section>
-
-<section class="location" id="location">
-    <h2>Find Us</h2>
-    <p>Come and check us out the Truckport!</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6194.152220393557!2d17.085864951877372!3d-22.614044125469093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c0b1ac7a8e53a5d%3A0x26439dd5979622a0!2sWindhoek%20Truckport!5e0!3m2!1sen!2sde!4v1761159711770!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-<section class="about" id="about">
-    <h2>About Us</h2>
-    <p>Uncle Würstchen brings the taste of German-style hotdogs to the streets of Namibia. Founded with passion and a love for street food, our mission is simple: serve joy in every bun!</p>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@uncle-wurstchen.com">hello[at]uncle-wurstchen.com</a></p>
-    <p>Phone: +264 81 234 5678</p>
-    <p><a href="https://www.instagram.com/unclewurstchen/">Follow us on Instagram @unclewurstchen</a></p>
-</section>
-
-<footer>
-    <p>© 2025 Uncle Würstchen. All rights reserved.</p>
-</footer>
-
-<script>
-    // Simple scroll animation for nav links
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', e => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
-            if (target) target.scrollIntoView({behavior: 'smooth'});
-        });
-    });
-</script>
-</body>
+<div class="wurst">
+    <img src="/images/wurst.jpeg" alt="Wurst">
+</div>
 </html>
